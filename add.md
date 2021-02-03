@@ -1,3 +1,4 @@
 ## todo list for pwg
 input arg for length of password\
-password with just numbers or just letters or both
+add 'pwgs' for just a pwg\
+add an option to make it use dmenu
