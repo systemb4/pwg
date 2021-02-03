@@ -23,7 +23,6 @@ char symbols[30] = {'`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')',
     '<', '>', ','};
 
 int main(int argc, char *argv[]) {
-    int pwlength;
     if(argv[1] == NULL) {
         pwlength = 12;
     } else {

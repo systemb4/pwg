@@ -1,9 +1,10 @@
 # makefile for pwg
 install: 
-	gcc src/pwg.c -o src/pwg
+	gcc pwg.c -o pwg
 	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp -f src/pwg ${DESTDIR}${PREFIX}/bin
+	cp -f pwg ${DESTDIR}${PREFIX}/bin
+	cp -u config.def.h config.h
 clean: 
-	rm -f src/pwg
+	rm -f pwg
 uninstall: 
 	rm -f ${DESTDIR}${PREFIX}/bin/pwg
