@@ -4,7 +4,7 @@ A completely random password manager useful for passwords you don't want to reme
 ---
 
 #### example
-<code>BF5b58dlBUI9 AIKVpNzgbmkF OFgZIMj0fd90 90iyRQugn32C FoGGAQ0ckgZS</code><br>
+<code>BF5b58dlBUI9</code><code>AIKVpNzgbmkF</code><code>OFgZIMj0fd90</code><code>90iyRQugn32C</code><code>FoGGAQ0ckgZS</code><br>
 <code>Q9PW0LT7I3up GOtRGkjayPGX uGXEKNkqJXaJ wUF5KXhezBW4 L649JAT25GtE</code><br>
 <code>jDURoVqKDTEb ELf4a2UMVOIs crj7XAA62iMf 21PuHjtbSz3T oMt0qZrsgym2</code><br>
 <code>YKUNTwSIkx4R EkSlJI3YllVz adSez36mDOZk 9ISj4J1wUHHt dzfoI2OI3uKp</code><br>
