@@ -2,12 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
-todo: 
-input arg for length of password
-password with just numbers or just letters or both
-*/
-
 int main() {
     int begLength = 0;
     int endLength = 62;
