@@ -4,7 +4,22 @@
 
 #include "charsets.h"
 
-int main() {
+int main(int argc, char *argv[]) {
+    int pwlength;
+    if(argv[1] == NULL) {
+        pwlength = 12;
+    } else {
+        if(atoi(argv[1]) <= 0) {
+            printf("password length must be greater 0!\n");
+            return 0;
+        } else if(atoi(argv[1]) == 1 || atoi(argv[1]) <= 5) {
+            printf("a longer password is suggested\n");
+            pwlength = atoi(argv[1]) ;
+        } else {
+            pwlength = atoi(argv[1]) ;
+        }
+    }
+
     int begLength = 0;
     int endLength = 62;
     int spaceNum = 0;
