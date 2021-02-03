@@ -1,4 +1,4 @@
-## random password generator(pwg)
+## password generator(pwg)
 a completely random password manager useful for passwords you don't want to rememeber
 
 ---
