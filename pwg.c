@@ -3,6 +3,7 @@
 #include <time.h>
 
 #include "charsets.h"
+#include "config.h"
 
 int main(int argc, char *argv[]) {
     int pwlength;
@@ -26,7 +27,7 @@ int main(int argc, char *argv[]) {
 
     srand(time(0)); 
     for(int numConOne = 0; numConOne < 30; numConOne++) {
-        for(int numCon = 0; numCon < 12; numCon++) {
+        for(int numCon = 0; numCon < pwlength; numCon++) {
             int randomIndex = (rand() % (endLength - begLength));
             printf("%c", charset[randomIndex]);
         }
