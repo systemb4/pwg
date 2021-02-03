@@ -1,6 +1,6 @@
+##
 <center><h2>random password generator(pwg)</h2></center>
-a completely random password manager useful for passwords you don't want to rememeber\
-pwg
+a completely random password manager useful for passwords you don't want to rememeber
 
 ---
 
