@@ -3,5 +3,5 @@
    always have to type use case flags 
 */
 int pwlength = 12;
-int multiple = 1;
+bool multiple = true;
 int passwordAmount = 30;
