@@ -4,3 +4,4 @@
 */
 int pwlength = 12;
 int multiple = 1;
+int passwordAmount = 30;
