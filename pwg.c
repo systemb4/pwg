@@ -14,9 +14,7 @@ int main(int argc, char *argv[]) {
         if(strcmp(argv[i], "-m") == 0) {
             multiple = false;
         } else if(strcmp(argv[i], "-h") == 0) {
-            printf("---pwg---\n");
-            printf("command (length of password) (multiple passwords 0, 1)\n");
-            printf("example: pwg 15 1\n");
+            printf("pwg options:\nsingle password(-m)\nlength of password(-l)\namount of passwords(-a)\n");
             return 0;
         }  else if(strcmp(argv[i], "-a") == 0) {
             i++;
