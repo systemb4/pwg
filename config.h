@@ -1,7 +1,12 @@
 /*
-   use this file to set your prefered defaults so that you don't 
-   always have to type use case flags 
+   edit this file to conform to your prefered defaults
 */
-int pwlength = 12;
-bool multiple = true;
-int passwordAmount = 30;
+
+int pwlength = 12; // number of characters in password 
+int passwordAmount = 30; // amount of passwords in output 
+bool multiple = true; // single or 
+
+bool removeUpper = false;
+bool removeLower = false; 
+bool removeNumerals = false;
+bool addSymbols = false;

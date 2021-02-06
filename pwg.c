@@ -8,6 +8,14 @@
 #include "config.h"
 #include "charsets.h"
 
+void editCharset() {
+    if(removeUpper == true) {
+    } else if(removeLower == true) {
+    } else if(removeNumerals == true) {
+    } else if(addSymboles == true) {
+    }
+}
+
 int main(int argc, char *argv[]) {
     //printf("%d\n", sizeof(charset[62]) / sizeof(*charset));
     for(int i = 1; i < argc; i++) {
