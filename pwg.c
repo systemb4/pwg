@@ -8,14 +8,6 @@
 #include "config.h"
 #include "charsets.h"
 
-void editCharset() {
-    if(removeUpper == true) {
-    } else if(removeLower == true) {
-    } else if(removeNumerals == true) {
-    } else if(addSymboles == true) {
-    }
-}
-
 int main(int argc, char *argv[]) {
     //printf("%d\n", sizeof(charset[62]) / sizeof(*charset));
     for(int i = 1; i < argc; i++) {
@@ -34,18 +26,6 @@ int main(int argc, char *argv[]) {
             }
             pwlength = atoi(argv[i]);
         }
-
-        /*else if(strcmp(argv[i], "-u") == 0) {
-            printf("%s\n", charset);
-            for(int x = 0; x < 62; x++) {
-                if(isupper(charset[x])) {
-                    for(int y = 0; y < 62; y++) {
-                        charset[x] = charset[x++];
-                    }
-                }
-            }
-            printf("%s\n", charset);
-        }*/
     }
 
     if(multiple == true) {
