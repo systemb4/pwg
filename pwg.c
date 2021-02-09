@@ -9,7 +9,10 @@
 #include "charsets.h"
 
 int main(int argc, char *argv[]) {
-    //printf("%d\n", sizeof(charset[62]) / sizeof(*charset));
+    int numcount = 0;
+    char finalpw[pwlength];
+    char *buff = finalpw;
+
     for(int i = 1; i < argc; i++) {
         if(strcmp(argv[i], "-m") == 0) {
             multiple = false;
@@ -55,9 +58,24 @@ int main(int argc, char *argv[]) {
         srand(time(0)); 
         for(int numCon = 0; numCon < pwlength; numCon++) {
             int randomIndex = (rand() % (62 - 0));
-            printf("%c", charset[randomIndex]);
+            char randchar = charset[randomIndex];
+            *buff++ = randchar;
+            strcat(finalpw, buff);
         }
-        printf("\n");
+
+        for(int x = 0; x < pwlength; x++) {
+            for(int y = 0; y < 10; y++) {
+                if(numerals[y] == finalpw[x]) {
+                    numcount++;
+                }
+            }
+        }
+
+        if(numcount >= 3) {
+            printf("%s\n", finalpw);
+        } else {
+            numcount = 0;
+        }
     }
     return 0;
 }
