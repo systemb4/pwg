@@ -39,12 +39,21 @@ char numCounter(char *password) {
     }
 }
 
+char helpMessage() {
+    printf("pwg options:\n");
+    printf("-m  single password output\n");
+    printf("-l  length of output password\n");
+    printf("-a  amount of passwords to output\n");
+    printf("-n  amount of number to check for in single password output\n");
+    printf("-h  show available arguments\n");
+}
+
 int main(int argc, char *argv[]) {
     for(int i = 1; i < argc; i++) {
         if(strcmp(argv[i], "-m") == 0) {
             passwordAmount = 1;
         } else if(strcmp(argv[i], "-h") == 0) {
-            printf("pwg options:\nsingle password(-m)\nlength of password(-l)\namount of passwords(-a)\n");
+            helpMessage();
             return 0;
         }  else if(strcmp(argv[i], "-a") == 0) {
             i++;
