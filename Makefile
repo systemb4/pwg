@@ -1,9 +1,9 @@
 # makefile for pwg
 install: 
 	gcc pwg.c -o pwg
-	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp -f pwg ${DESTDIR}${PREFIX}/bin
+	mkdir -p /bin
+	cp -f pwg /bin
 clean: 
 	rm -f pwg
 uninstall: 
-	rm -f ${DESTDIR}${PREFIX}/bin/pwg
+	rm -f /bin/pwg

@@ -1,12 +1,8 @@
 /*
-   edit this file to conform to your prefered defaults
+   edit this file to conform to your preferred defaults
 */
 
 int pwlength = 12; // number of characters in password 
-int passwordAmount = 30; // amount of passwords in output 
-bool multiple = true; // single or 
-
-bool removeUpper = false;
-bool removeLower = false; 
-bool removeNumerals = false;
-bool addSymbols = false;
+int passwordAmount = 50; // amount of passwords in default
+int minNum = 3; // minimum amount of numbers in password
+int numcount = 0; // need for number counter in main
