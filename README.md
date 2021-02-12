@@ -27,9 +27,9 @@ a completely random password manager useful for passwords you don't want to reme
 **-n**
 :specify amount of numbers to check for in the numcount algorithm
 
-# EXAMPLES
+## EXAMPLES
 **pwg -m -n 3 -l 15**
 :outputs a single password with a length of 15 characters and makes sure that the password has at least three numbers in it for maximum security
 
-# BUGS
+## BUGS
 submit bug reports online at: https://github.com/systemb4/pwg/issues
