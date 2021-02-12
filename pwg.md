@@ -2,4 +2,4 @@
 
 ## option
 **-h** show available commands
-**-h** specify length of password
+**-l** specify length of password
