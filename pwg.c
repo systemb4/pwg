@@ -11,7 +11,7 @@
 #include "config.h"
 #include "charsets.h"
 
-char *pwgenerator() {
+char *pwgenerator(void) {
     char* password = malloc(pwlength);
     char *buff = password;
     srand(time(0));
@@ -39,7 +39,7 @@ char numCounter(char *password) {
     }
 }
 
-char helpMessage() {
+char helpMessage(void) {
     printf("pwg options:\n");
     printf("-m  single password output\n");
     printf("-l  length of output password\n");
