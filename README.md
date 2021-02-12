@@ -10,3 +10,26 @@ a completely random password manager useful for passwords you don't want to reme
 <code>YKUNTwSIkx4R</code> <code>EkSlJI3YllVz</code> <code>adSez36mDOZk</code> <code>9ISj4J1wUHHt</code> <code>dzfoI2OI3uKp</code><br>
 <code>mDBNhpXgVEpM</code> <code>dd9XIDfM1iYy</code> <code>0C5ZWEf89GKf</code> <code>TwlE1yh4AdP9</code> <code>HSIx1xUYXONK</code><br>
 <code>hSFfpdi7zsBp</code> <code>OGheJUbgCJCq</code> <code>5meS1Ss6AVaN</code> <code>YhKmxbzbHGgg</code> <code>oflQON8JZbrN</code><br>
+
+## options
+**-h**
+:show available commands
+
+**-l**
+:specify length of password
+
+**-a**
+:specify amount of passwords
+
+**-m**
+:specify to only output one password which also uses the numcounter algorithm to make sure that the single password a sufficient amount of numbers so that it is even stronger
+
+**-n**
+:specify amount of numbers to check for in the numcount algorithm
+
+# EXAMPLES
+**pwg -m -n 3 -l 15**
+:outputs a single password with a length of 15 characters and makes sure that the password has at least three numbers in it for maximum security
+
+# BUGS
+submit bug reports online at: https://github.com/systemb4/pwg/issues

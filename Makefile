@@ -8,3 +8,4 @@ clean:
 	rm -f pwg
 uninstall: 
 	rm -f /bin/pwg
+	rm -f /usr/local/man/man1/pwg.1
