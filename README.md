@@ -32,4 +32,4 @@ a completely random password manager useful for passwords you don't want to reme
 :outputs a single password with a length of 15 characters and makes sure that the password has at least three numbers in it for maximum security
 
 ## BUGS
-submit bug reports online at: https://github.com/systemb4/pwg/issues
+submit bug reports and suggestions online at: https://github.com/systemb4/pwg/issues
