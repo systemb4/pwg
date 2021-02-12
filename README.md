@@ -1,5 +1,5 @@
 ## password generator(pwg)
-pwg is a pseudo-suckless piece of software that generates completely random passwords that you won't be able to rememeber\
+pwg is a pseudo-suckless piece of software that generates completely random passwords that you won't be able to rememeber
 
 ---
 
