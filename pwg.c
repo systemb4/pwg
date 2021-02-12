@@ -19,7 +19,6 @@ char *pwgenerator(void) {
         int randomIndex = (rand() % (62 - 0));
         char randchar = charset[randomIndex];
         *buff++ = randchar;
-        strcat(password, buff);
     }
     return password;
 }
