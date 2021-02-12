@@ -86,18 +86,15 @@ int main(int argc, char *argv[]) {
         int spaceNum = 0;
         for(int numConOne = 0; numConOne < passwordAmount; numConOne++) {
             for(int numCon = 0; numCon < pwlength; numCon++) {
-                int randomIndex = (rand() % (62 - 0));
+                int randomIndex = (rand() % (62));
                 printf("%c", charset[randomIndex]);
             }
            
             if(spaceNum == 4) {
                 printf("\n");
                 spaceNum = 0;
-            } else if(passwordAmount <= spaceNum) {
-                printf(" ");
-                spaceNum++;
-            } else if(passwordAmount >= spaceNum) {
-                printf(" ");
+            } else {
+                putchar(' ');
                 spaceNum++;
             } 
         }
