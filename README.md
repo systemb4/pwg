@@ -1,5 +1,5 @@
 ## password generator(pwg)
-a completely random password manager useful for passwords you don't want to rememeber
+pwg is a pseudo-suckless piece of software that generates completely random passwords that you won't be able to rememeber\
 
 ---
 
@@ -10,6 +10,11 @@ a completely random password manager useful for passwords you don't want to reme
 <code>YKUNTwSIkx4R</code> <code>EkSlJI3YllVz</code> <code>adSez36mDOZk</code> <code>9ISj4J1wUHHt</code> <code>dzfoI2OI3uKp</code><br>
 <code>mDBNhpXgVEpM</code> <code>dd9XIDfM1iYy</code> <code>0C5ZWEf89GKf</code> <code>TwlE1yh4AdP9</code> <code>HSIx1xUYXONK</code><br>
 <code>hSFfpdi7zsBp</code> <code>OGheJUbgCJCq</code> <code>5meS1Ss6AVaN</code> <code>YhKmxbzbHGgg</code> <code>oflQON8JZbrN</code><br>
+
+## installation
+to install pwg onto your system use the command <code>sudo make install</code><br>
+<code>man pwg</code> will show you the manual for pwg<br>
+to change defaults edit config.h to your likings
 
 ## options
 **-h**

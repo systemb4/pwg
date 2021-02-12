@@ -46,6 +46,7 @@ char helpMessage() {
     printf("-a  amount of passwords to output\n");
     printf("-n  amount of number to check for in single password output\n");
     printf("-h  show available arguments\n");
+    printf("use 'man pwg' for more information\n");
 }
 
 int main(int argc, char *argv[]) {
