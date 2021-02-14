@@ -1,6 +1,5 @@
 // pwg
 // See LICENSE file for copyright and license details.
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -39,13 +38,13 @@ char numCounter(char *password) {
 }
 
 char helpMessage(void) {
-    printf("pwg options:\n");
-    printf("-m  single password output\n");
-    printf("-l  length of output password\n");
-    printf("-a  amount of passwords to output\n");
-    printf("-n  amount of number to check for in single password output\n");
-    printf("-h  show available arguments\n");
-    printf("use 'man pwg' for more information\n");
+    fprintf(stderr, "pwg options:\n");
+    fprintf(stderr, "-m  single password output\n");
+    fprintf(stderr, "-l  length of output password\n");
+    fprintf(stderr, "-a  amount of passwords to output\n");
+    fprintf(stderr, "-n  amount of number to check for in single password output\n");
+    fprintf(stderr, "-h  show available arguments\n");
+    fprintf(stderr, "use 'man pwg' for more information\n");
 }
 
 int main(int argc, char *argv[]) {
@@ -66,7 +65,7 @@ int main(int argc, char *argv[]) {
         } else if(strcmp(argv[i], "-l") == 0) {
             i++;
             if(atoi(argv[i]) < 5) {
-                printf("a longer password is suggested!\n");
+                fprintf(stderr, "a longer password is suggested!\n");
             }
             pwlength = atoi(argv[i]);
         } else if(strcmp(argv[i], "-n") == 0) {
@@ -99,7 +98,7 @@ int main(int argc, char *argv[]) {
         }
 
         if(passwordAmount % 5 != 0) {
-            printf("\n");
+            fprintf(stderr, "\n");
         }
     } 
 
