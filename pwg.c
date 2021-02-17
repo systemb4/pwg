@@ -39,11 +39,11 @@ char numCounter(char *password) {
 
 char helpMessage(void) {
     fprintf(stderr, "pwg options:\n");
-    fprintf(stderr, "-m  single password output\n");
-    fprintf(stderr, "-l  length of output password\n");
-    fprintf(stderr, "-a  amount of passwords to output\n");
-    fprintf(stderr, "-n  amount of number to check for in single password output\n");
-    fprintf(stderr, "-h  show available arguments\n");
+    fprintf(stderr, "\t-m  single password output\n");
+    fprintf(stderr, "\t-l  length of output password\n");
+    fprintf(stderr, "\t-a  amount of passwords to output\n");
+    fprintf(stderr, "\t-n  amount of number to check for in single password output\n");
+    fprintf(stderr, "\t-h  show available arguments\n");
     fprintf(stderr, "use 'man pwg' for more information\n");
 }
 
