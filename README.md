@@ -27,7 +27,7 @@ to change defaults edit config.h to your likings
 :specify amount of passwords
 
 **-m**
-:specify to only output one password which also uses the numcounter algorithm to make sure that the single password a sufficient amount of numbers so that it is even stronger
+:specify to only output one password which also uses the numcounter algorithm to make sure that the single password contains a sufficient amount of numbers so that it is even stronger
 
 **-n**
 :specify amount of numbers to check for in the numcount algorithm
