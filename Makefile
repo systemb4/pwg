@@ -1,6 +1,7 @@
 # makefile for pwg
-install: 
+pwg: 
 	gcc pwg.c -o pwg
+install: pwg
 	mkdir -p /bin
 	cp -f pwg /bin
 	cp -f pwg.1 /usr/local/man/man1

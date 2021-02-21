@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
         } else if(strcmp(argv[i], "-h") == 0) {
             helpMessage();
             return 0;
-        }  else if(strcmp(argv[i], "-a") == 0) {
+        } else if(strcmp(argv[i], "-a") == 0) {
             i++;
             if(i > 0) {
                 passwordAmount = atoi(argv[i]);
