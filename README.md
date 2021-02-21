@@ -15,7 +15,7 @@ pwg is a pseudo-suckless piece of software that generates completely random pass
 to install pwg onto your system use the command <code>sudo make install</code><br>
 <code>man pwg</code> will show you the manual for pwg<br>
 to change defaults edit config.h to your likings<br>
-<code>pwg</code> is also available in the aur as <code>pwg-git</code>
+<code>pwg</code> is also available in the aur as <code>pwg-git</code> (currently not functioning)
 
 ## options
 **-h**
