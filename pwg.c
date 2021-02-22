@@ -87,20 +87,20 @@ int main(int argc, char *argv[]) {
                 int randomIndex = (rand() % (62));
                 printf("%c", charset[randomIndex]);
             }
-           
+
             if(spaceNum == 4) {
                 printf("\n");
                 spaceNum = 0;
             } else {
                 putchar(' ');
                 spaceNum++;
-            } 
+            }
         }
 
         if(passwordAmount % 5 != 0) {
             fprintf(stderr, "\n");
         }
-    } 
+    }
 
     return 0;
 }
