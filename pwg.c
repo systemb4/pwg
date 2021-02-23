@@ -11,7 +11,7 @@
 #include "charsets.h"
 
 char *pwgenerator(void) {
-    char* password = malloc(pwlength);
+    char *password = malloc(pwlength);
     char *buff = password;
     srand(time(0));
     for(int numCon = 0; numCon < pwlength; numCon++) {
