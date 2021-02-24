@@ -15,7 +15,7 @@ char *pwgenerator(void) {
     char *buff = password;
     srand(time(0));
     for(int numCon = 0; numCon < pwlength; numCon++) {
-        int randomIndex = (rand() % (62 - 0));
+        int randomIndex = (rand() % 62);
         char randchar = charset[randomIndex];
         *buff++ = randchar;
     }
@@ -24,7 +24,7 @@ char *pwgenerator(void) {
 
 char numCounter(char *password) {
     numcount = 0;
-    sleep(1);
+    sleep(0.1);
     for(int x = 0; x < pwlength; x++) {
         for(int y = 0; y < 10; y++) {
             if(numerals[y] == password[x]) {
@@ -84,7 +84,7 @@ int main(int argc, char *argv[]) {
         int spaceNum = 0;
         for(int numConOne = 0; numConOne < passwordAmount; numConOne++) {
             for(int numCon = 0; numCon < pwlength; numCon++) {
-                int randomIndex = (rand() % (62));
+                int randomIndex = rand() % 62;
                 printf("%c", charset[randomIndex]);
             }
 
