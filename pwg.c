@@ -11,11 +11,12 @@
 #include "charsets.h"
 
 char *pwgenerator(void) {
+    srand(time(NULL));
     char *password = malloc(pwlength);
     char *buff = password;
     srand(time(0));
     for(int numCon = 0; numCon < pwlength; numCon++) {
-        int randomIndex = (rand() % 62);
+        int randomIndex = rand() % 62;
         char randchar = charset[randomIndex];
         *buff++ = randchar;
     }
@@ -81,6 +82,7 @@ int main(int argc, char *argv[]) {
         }
 
     } else if(passwordAmount > 1) {
+        srand(time(NULL));
         int spaceNum = 0;
         for(int numConOne = 0; numConOne < passwordAmount; numConOne++) {
             for(int numCon = 0; numCon < pwlength; numCon++) {
