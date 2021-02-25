@@ -24,16 +24,15 @@ char *pwgenerator(void) {
 
 char numCounter(char *password) {
     numcount = 0;
-    sleep(0.1);
-    for(int x = 0; x < pwlength; x++) {
+    for(int x = 0; x < minNum; x++) {
         for(int y = 0; y < 10; y++) {
             if(numerals[y] == password[x]) {
                 numcount++;
             }
         }
     }
-    if(numcount >= 3) {
-        printf("%s\n", password);
+    if(numcount >= minNum) {
+        printf("%s", password);
     }
 }
 
@@ -48,6 +47,7 @@ char helpMessage(void) {
 }
 
 int main(int argc, char *argv[]) {
+    srand(time(NULL));
     for(int i = 1; i < argc; i++) {
         if(strcmp(argv[i], "-m") == 0) {
             passwordAmount = 1;
@@ -56,32 +56,26 @@ int main(int argc, char *argv[]) {
             return 0;
         } else if(strcmp(argv[i], "-a") == 0) {
             i++;
-            if(i > 0) {
-                passwordAmount = atoi(argv[i]);
-            } else if(passwordAmount <= 0) {
-                printf("%i is not a valid password amount!", passwordAmount);
-                return 0;
-            }
+            passwordAmount = atoi(argv[i]);
         } else if(strcmp(argv[i], "-l") == 0) {
             i++;
+            pwlength = atoi(argv[i]);
             if(atoi(argv[i]) < 5) {
                 fprintf(stderr, "a longer password is suggested!\n");
             }
-            pwlength = atoi(argv[i]);
         } else if(strcmp(argv[i], "-n") == 0) {
-            i++; 
+            passwordAmount = 1;
+            i++;
             minNum = i;
         }
     }
 
     if(passwordAmount == 1) {
-        while(numcount < 3) {
-            char *finalpw = pwgenerator();
-            numCounter(finalpw);
+        while(numcount < minNum) {
+            numCounter(pwgenerator());
         }
 
     } else if(passwordAmount > 1) {
-        srand(time(NULL));
         int spaceNum = 0;
         for(int numConOne = 0; numConOne < passwordAmount; numConOne++) {
             for(int numCon = 0; numCon < pwlength; numCon++) {
