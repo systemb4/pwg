@@ -11,7 +11,6 @@
 #include "charsets.h"
 
 char *pwgenerator(void) {
-    srand(time(NULL));
     char *password = malloc(pwlength);
     char *buff = password;
     srand(time(0));
@@ -24,15 +23,19 @@ char *pwgenerator(void) {
 
 char numCounter(char *password) {
     numcount = 0;
-    for(int x = 0; x < minNum; x++) {
+    //printf("%s\n", password);
+    for(int x = 0; x < pwlength; x++) {
         for(int y = 0; y < 10; y++) {
+            //printf("%c - %c\n", numerals[y], password[x]);
             if(numerals[y] == password[x]) {
                 numcount++;
             }
         }
     }
+    //printf("%d", numcount);
     if(numcount >= minNum) {
-        printf("%s", password);
+        printf("%s\n", password);
+        exit(0);
     }
 }
 
@@ -71,7 +74,7 @@ int main(int argc, char *argv[]) {
     }
 
     if(passwordAmount == 1) {
-        while(numcount < minNum) {
+        while(1) {
             numCounter(pwgenerator());
         }
 
