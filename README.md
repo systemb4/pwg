@@ -34,7 +34,7 @@ to change defaults edit config.h to your likings<br>
 :specify amount of numbers to check for in the numcount algorithm
 
 ## EXAMPLES
-**pwg -m -n 3 -l 15**
+<code>pwg -m -n 3 -l 15</code>
 :outputs a single password with a length of 15 characters and makes sure that the password has at least three numbers in it for maximum security
 
 ## BUGS
