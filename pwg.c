@@ -54,6 +54,7 @@ int main(int argc, char *argv[]) {
     for(int i = 1; i < argc; i++) {
         if(strcmp(argv[i], "-m") == 0) {
             passwordAmount = 1;
+            printf("%i", passwordAmount);
         } else if(strcmp(argv[i], "-h") == 0) {
             helpMessage();
             return 0;
@@ -66,10 +67,12 @@ int main(int argc, char *argv[]) {
             if(atoi(argv[i]) < 5) {
                 fprintf(stderr, "a longer password is suggested!\n");
             }
+            printf("%i", pwlength);
         } else if(strcmp(argv[i], "-n") == 0) {
             //passwordAmount = 1;
             i++;
-            minNum = i;
+            minNum = atoi(argv[i]);
+            printf("\n%i\n", minNum);
         }
     }
 
