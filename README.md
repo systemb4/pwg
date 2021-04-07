@@ -13,10 +13,10 @@ pwg is a pseudo-suckless piece of software that generates completely random pass
 <code>1543LVm2L2TCsNMG5</code> <code>202DcJqCGX5aYxN30WAVp6</code>
 
 ## installation
-to install pwg onto your system use the command <code>sudo make install</code><br>
+To install pwg onto your unix based system, navigate into the pwg directory on your system after using <code>git clone https://github.com/systemb4/pwg.git</code> to download the source code. When in the <code>pwg</code> directory, use the command <code>sudo make install</code><br>
 <code>man pwg</code> will show you the manual for pwg<br>
-to change defaults edit config.h to your likings<br>
-<code>pwg</code> is also available in the aur as <code>pwg-git</code> (currently not functioning)
+to change defaults edit config.h in the source code to your liking before compiling and reinstalling to your system<br>
+<code>pwg</code> is also available in the arch user repository(aur) as <code>pwg-git</code> (currently not functioning)
 
 ## options
 **-h**
