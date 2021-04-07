@@ -11,7 +11,7 @@ pwg is a pseudo-suckless piece of software that generates completely random pass
 <code>mDBNhpXgVEpM</code> <code>dd9XIDfM1iYy</code> <code>0C5ZWEf89GKf</code> <code>TwlE1yh4AdP9</code>
 <code>hSFfpdi7zsBp</code> <code>OGheJUbgCJCq</code> <code>5meS1Ss6AVaN</code> <code>YhKmxbzbHGgg</code>
 <br>
-<code>1543LVm2L2TCsNMG5</code> <code><202DcJqCGX5aYxN30WAVp6/code>
+<code>1543LVm2L2TCsNMG5</code> <code><202DcJqCGX5aYxN30WAVp6</code>
 
 ## installation
 to install pwg onto your system use the command <code>sudo make install</code><br>
