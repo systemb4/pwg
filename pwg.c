@@ -23,16 +23,14 @@ char *pwgenerator(void) {
 
 char numCounter(char *password) {
     numcount = 0;
-    //printf("%s\n", password);
     for(int x = 0; x <= pwlength; x++) {
         for(int y = 0; y <= 9; y++) {
-            //printf("%c - %c\n", numerals[y], password[x]);
             if(numerals[y] == password[x]) {
                 numcount++;
             }
         }
     }
-    //printf("%d", numcount);
+
     if(numcount >= minNum) {
         printf("%s\n", password);
         exit(0);
@@ -54,7 +52,6 @@ int main(int argc, char *argv[]) {
     for(int i = 1; i < argc; i++) {
         if(strcmp(argv[i], "-m") == 0) {
             passwordAmount = 1;
-            printf("%i", passwordAmount);
         } else if(strcmp(argv[i], "-h") == 0) {
             helpMessage();
             return 0;
@@ -69,10 +66,8 @@ int main(int argc, char *argv[]) {
             }
             printf("%i", pwlength);
         } else if(strcmp(argv[i], "-n") == 0) {
-            //passwordAmount = 1;
             i++;
             minNum = atoi(argv[i]);
-            printf("\n%i\n", minNum);
         }
     }
 
